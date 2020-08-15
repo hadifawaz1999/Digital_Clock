@@ -47,7 +47,7 @@ of all the JK flip flops.
 ![counter_div_2](images/counter_div_2.png)
 
 * Synchronous counter divide input : Also called in our simulation file ”counter div input”, this is basically same
-as explained in section 2.2, it is a synchronous counter div 10, but also it
+as explained in counter_div_10, it is a synchronous counter div 10, but also it
 can be a divider for another number which is when the clock’ hours become
 more then 20 hours, we have to rest the clock at 23 hours 59 minutes and 59
 seconds to 0 hours 0 minutes and 0 seconds. So this IC takes an input which
