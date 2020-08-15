@@ -36,11 +36,15 @@ get a divider by 10 that counts from 0 to 9.
 counter div 10, but we stop when the output of the counter is 6 (0110) so we
 take to the AND gate Q2 and Q3.
 
+![counter_div_6](images/counter_div_6.png)
+
 * Synchronous counter divide by 2 : Also called in our simulation file ”counter div 2”, simple synchronous 2 bits
 counter using JK flip flops and we want the counter to count only from 0 to
 2 so we take into the input of the AND gate the bits that will be 1 when the
 output of the counter is 3 (11) so Q1 and Q2, all the way to the clear inputs
 of all the JK flip flops.
+
+![counter_div_2](images/counter_div_2.png)
 
 * Synchronous counter divide input : Also called in our simulation file ”counter div input”, this is basically same
 as explained in section 2.2, it is a synchronous counter div 10, but also it
@@ -50,6 +54,8 @@ seconds to 0 hours 0 minutes and 0 seconds. So this IC takes an input which
 will be HIGH when the hour’s first digit is 2 and the second one becomes
 4, both the AND gate for the divide by 10 and this new input divider go
 through an OR gate and all through the clear inputs of all the JK flip flops.
+
+![counter_div_input](images/counter_div_input.png)
 
 * Clock Chip : In this circuit we are going to use 6 7 segments 1 digit circuits, 2 counters
 div 10, 2 counters div 6, 1 counter div input and 1 counter div 2. Note
@@ -71,8 +77,12 @@ hour’s digit we use a counter div 2 we take the pause as the output of an OR
 gate that takes 2 inputs, the previous AND gate and an AND gate taking
 the 1’s of the previous counter when the output is 10 (1010).
 
+![clock_chip](images/clock_chip.png)
+
 ###### PS: all the counters takes as input the same clock at 1Hz frequency.
 
 * Main : For  this  final  circuit  we  take  the  clock  chip  which  outputs  6  7  segments  1digit  circuits  ( a_i , b_i , c_i , d_i , e_i , f_i , g_i )
 i  going  from  1  to  6.
 All  theseoutputs go through 6 7-segments display and of course we give the clock chipa clock input
+
+![main](images/main.png)
