@@ -30,6 +30,8 @@ of the counter is 10 (1010 in binary) which are Q1 and Q3, put them through
 an AND gate and all the way to the clear inputs of all the JK flip flops so we
 get a divider by 10 that counts from 0 to 9.
 
+![counter_div_10](images/counter_div_10.png)
+
 * Synchronous counter divide by 6 : Also called in our simulation file ”counter div 6”, same explanation as the
 counter div 10, but we stop when the output of the counter is 6 (0110) so we
 take to the AND gate Q2 and Q3.
