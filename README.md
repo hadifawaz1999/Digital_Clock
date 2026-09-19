@@ -1,3 +1,5 @@
+
+
 # Digital_Clock
 This digital clock is designed using Logisim.
 
@@ -49,7 +51,7 @@ of all the JK flip flops.
 * Synchronous counter divide input : Also called in our simulation file ”counter div input”, this is basically same
 as explained in counter_div_10, it is a synchronous counter div 10, but also it
 can be a divider for another number which is when the clock’ hours become
-more then 20 hours, we have to rest the clock at 23 hours 59 minutes and 59
+more then 20 hours, we have to reset the clock at 23 hours 59 minutes and 59
 seconds to 0 hours 0 minutes and 0 seconds. So this IC takes an input which
 will be HIGH when the hour’s first digit is 2 and the second one becomes
 4, both the AND gate for the divide by 10 and this new input divider go
